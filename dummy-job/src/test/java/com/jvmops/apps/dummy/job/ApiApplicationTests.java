@@ -1,10 +1,10 @@
-package com.jvmops.gradle.modules;
+package com.jvmops.apps.dummy.job;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GradleSnippetsApplicationTests {
+class ApiApplicationTests {
 
 	@Test
 	void contextLoads() {

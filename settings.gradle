@@ -1,1 +1,3 @@
 rootProject.name = 'gradle-snippets'
+include 'dummy-api'
+include 'dummy-job'
