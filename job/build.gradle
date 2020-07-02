@@ -1,0 +1,20 @@
+import com.bmuschko.gradle.docker.tasks.image.DockerBuildImage
+
+springBoot {
+    mainClassName = 'com.jvmops.apps.job.Main'
+
+}
+
+bootBuildImage {
+    imageName="jvmops/job"
+    cleanCache=true
+}
+
+task dockerJob(type: DockerBuildImage) {
+    inputDir = file("$project.rootDir/job")
+    images.add('jvmops/job:latest')
+
+    dependsOn(bootJar)
+}
+
+

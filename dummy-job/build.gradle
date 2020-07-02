@@ -1,7 +1,0 @@
-springBoot {
-    mainClassName = 'com.jvmops.apps.dummy.job.Main'
-}
-
-dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-}

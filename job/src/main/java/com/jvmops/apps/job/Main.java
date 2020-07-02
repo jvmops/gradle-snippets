@@ -1,4 +1,4 @@
-package com.jvmops.apps.dummy.job;
+package com.jvmops.apps.job;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,5 +15,6 @@ public class Main {
 	@PostConstruct
 	void hello() {
 		System.out.println(">>>>>> Hello from dummy-job!");
+		System.out.println(">>>>>> Nothing to do here anymore!");
 	}
 }

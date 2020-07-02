@@ -1,3 +1,6 @@
 rootProject.name = 'gradle-snippets'
-include 'dummy-api'
-include 'dummy-job'
+
+include 'hello-api'
+project(':hello-api').projectDir = new File(settingsDir, 'modules/hello-api')
+
+include 'job'

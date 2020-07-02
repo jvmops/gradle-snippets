@@ -1,0 +1,24 @@
+import com.bmuschko.gradle.docker.tasks.image.DockerBuildImage
+
+springBoot {
+	mainClassName = 'com.jvmops.apps.api.Main'
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+}
+
+docker {
+
+}
+
+task dockerApi(type: DockerBuildImage) {
+	inputDir = file("$project.rootDir/modules/hello-api")
+	images.add('jvmops/api:latest')
+
+	buildArgs = [
+	        asd: "qwee"
+	]
+
+	dependsOn(bootJar)
+}

@@ -1,4 +1,4 @@
-package com.jvmops.apps.dummy.job;
+package com.jvmops.apps.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
